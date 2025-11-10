@@ -205,7 +205,7 @@ body {
   display: flex;
   align-items: center;
   background: var(--pico-form-element-background-color);
-  padding: 0.5rem 1rem;
+  padding: 0.3rem 1rem;
   border-radius: 10px;
   border: 1px solid var(--pico-muted-border-color);
   width: 300px;
@@ -222,6 +222,14 @@ body {
   background: transparent;
   width: 100%;
   font-size: 1rem;
+  padding: 0.25rem 0.5rem;
+  color: var(--pico-color);
+  margin: 0;
+  line-height: normal;
+}
+
+.search-box input::placeholder {
+  color: var(--pico-muted-color);
 }
 
 /* Iconos a la derecha del header */
@@ -393,6 +401,7 @@ i.fa-solid.fa-star {
   flex: 1 1 320px;
   background: var(--pico-card-background-color);
   border-radius: 12px;
+  border: 1px solid var(--pico-muted-border-color);
   /* overflow: hidden; */
   /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); */
 }
@@ -405,11 +414,13 @@ i.fa-solid.fa-star {
   position: absolute;
   top: 10px;
   left: 10px;
-  background: var(--pico-card-background-color);
-  color: var(--pico-color);
+  background: var(--pico-primary);
+  color: white;
   font-size: 0.75rem;
   padding: 4px 10px;
   border-radius: 20px;
+  font-weight: 500;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .card-banner img:first-of-type {
