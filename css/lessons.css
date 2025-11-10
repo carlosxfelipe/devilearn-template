@@ -109,6 +109,12 @@ aside.sidebar {
   justify-content: space-between;
 }
 
+.accordion-header:focus {
+  outline: none !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
 [data-theme="light"] .accordion-header {
   color: var(--pico-h1-color, #1f2937);
 }
