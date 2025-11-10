@@ -369,6 +369,18 @@ i.fa-solid.fa-star {
   align-items: center;
 }
 
+/* Força a cor correta no modo light */
+[data-theme="light"] .accordion-header {
+  color: var(--pico-h1-color, #1f2937);
+}
+
+/* Fallback para modo light sem data-theme */
+@media (prefers-color-scheme: light) {
+  .accordion-header {
+    color: var(--pico-h1-color, #1f2937) !important;
+  }
+}
+
 .accordion-header::after {
   content: "⌄";
   font-size: 0.9rem;
