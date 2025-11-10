@@ -34,7 +34,8 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background-color: var(--pico-color);
+  background-color: var(--pico-background-color);
+  border-bottom: 1px solid var(--pico-muted-border-color);
 }
 
 .topbar .logo {
@@ -50,10 +51,34 @@ body {
 .topbar .acciones button {
   background: transparent;
   border: none;
-  color: var(--pico-contrast);
+  color: var(--pico-color);
   margin-left: 1rem;
   font-size: 0.9rem;
   cursor: pointer;
+  padding: 0.5rem 1rem;
+  border-radius: var(--pico-border-radius);
+  transition: background-color 0.15s ease;
+}
+
+.topbar .acciones button:hover {
+  background-color: var(--pico-muted-border-color);
+}
+
+/* Estilos específicos para o botão discusiones */
+.discusiones {
+  color: var(--pico-color) !important;
+}
+
+/* Força a cor correta no modo light */
+[data-theme="light"] .discusiones {
+  color: var(--pico-h1-color, #1f2937) !important;
+}
+
+/* Fallback para modo light sem data-theme */
+@media (prefers-color-scheme: light) {
+  .discusiones {
+    color: var(--pico-h1-color, #1f2937) !important;
+  }
 }
 
 .layout {
@@ -195,12 +220,18 @@ video {
 }
 
 .btn-complete {
-  background: var(--pico-color);
-  color: var(--pico-contrast);
+  background: var(--pico-primary);
+  color: white;
   border: none;
   padding: 0.6rem 1.2rem;
   border-radius: 6px;
   cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.15s ease;
+}
+
+.btn-complete:hover {
+  opacity: 0.9;
 }
 
 /* === Responsive Sidebar === */

@@ -479,16 +479,21 @@ i.fa-solid.fa-star {
 
 a.btn {
   text-decoration: none;
-  color: var(--pico-contrast);
+  color: white;
   background-color: var(--pico-primary);
   padding: 15px 20px;
-  /* margin-top: 20px; */
   display: block;
   height: auto;
   width: 100%;
   border-radius: 10px;
   text-align: center;
   font-size: 16px;
+  font-weight: 500;
+  transition: background-color 0.15s ease;
+}
+
+a.btn:hover {
+  opacity: 0.9;
 }
 
 /* .accordion-content ul li:before {
@@ -586,18 +591,19 @@ a.btn {
 }
 
 .submit-btn {
-  background-color: var(--pico-color);
+  background-color: var(--pico-primary);
   border: none;
   padding: 0.8rem 1.2rem;
   border-radius: 6px;
-  color: var(--pico-contrast);
-  font-weight: bold;
+  color: white;
+  font-weight: 500;
   cursor: pointer;
   align-self: flex-start;
+  transition: background-color 0.15s ease;
 }
 
 .submit-btn:hover {
-  background-color: var(--pico-muted-color);
+  opacity: 0.9;
 }
 
 @media (max-width: 768px) {
