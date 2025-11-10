@@ -67,6 +67,12 @@ body {
   background: var(--pico-background-color);
 }
 
+main,
+.main-content,
+.course-layout {
+  background-color: var(--pico-background-color) !important;
+}
+
 main {
   flex-grow: 1;
   padding: 2rem;
@@ -667,3 +673,20 @@ a.btn:hover {
 }
 
 /* ===== Responsivo ===== */
+@media (max-width: 480px) {
+  .carousel-wrapper {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .course-grid {
+    justify-content: center !important;
+    padding: 1rem !important;
+    margin: 0 auto !important;
+  }
+
+  .course-card {
+    margin: 0 auto !important;
+    max-width: 90% !important; /* evita que fique colado nas bordas */
+  }
+}
