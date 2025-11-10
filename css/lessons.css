@@ -64,17 +64,14 @@ body {
   background-color: var(--pico-muted-border-color);
 }
 
-/* Estilos específicos para o botão discusiones */
 .discusiones {
   color: var(--pico-color) !important;
 }
 
-/* Força a cor correta no modo light */
 [data-theme="light"] .discusiones {
   color: var(--pico-h1-color, #1f2937) !important;
 }
 
-/* Fallback para modo light sem data-theme */
 @media (prefers-color-scheme: light) {
   .discusiones {
     color: var(--pico-h1-color, #1f2937) !important;
@@ -145,12 +142,10 @@ aside.sidebar {
   justify-content: space-between;
 }
 
-/* Força a cor correta no modo light */
 [data-theme="light"] .accordion-header {
   color: var(--pico-h1-color, #1f2937);
 }
 
-/* Fallback para modo light sem data-theme */
 @media (prefers-color-scheme: light) {
   .accordion-header {
     color: var(--pico-h1-color, #1f2937) !important;
@@ -234,7 +229,6 @@ video {
   opacity: 0.9;
 }
 
-/* === Responsive Sidebar === */
 .menu-toggle {
   display: none;
   background: none;
@@ -256,7 +250,6 @@ video {
   .sidebar {
     position: fixed;
     top: 60px;
-    /* altura del header */
     left: -100%;
     width: 260px;
     height: 100%;
