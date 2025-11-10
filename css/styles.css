@@ -592,4 +592,78 @@ a.btn:hover {
   transition: color 0.25s ease;
 }
 
+/* ===== hambúrguer centralizado ===== */
+
+.header {
+  align-items: center !important;
+} /* reforço no container */
+
+.header .nav-dropdown {
+  display: flex !important;
+  align-items: center !important;
+  /* NÃO deixe o details crescer ao abrir */
+  height: 40px !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  position: relative !important;
+}
+
+/* Botão 40x40 sempre igual, fechado ou aberto */
+.header .nav-dropdown > summary {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 40px !important;
+  height: 40px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 1px solid var(--pico-muted-border-color) !important;
+  background: var(--pico-card-background-color) !important;
+  color: var(--pico-color) !important;
+  line-height: 1 !important;
+  transform: none !important;
+  translate: 0 !important;
+  top: auto !important;
+  left: auto !important;
+  box-shadow: none !important;
+}
+
+/* Não permitir que [open], :hover, :focus mexam na caixa */
+.header .nav-dropdown[open] > summary,
+.header .nav-dropdown > summary:hover,
+.header .nav-dropdown > summary:focus,
+.header .nav-dropdown > summary:focus-visible {
+  margin: 0 !important;
+  padding: 0 !important;
+  transform: none !important;
+  translate: 0 !important;
+  box-shadow: none !important;
+}
+
+/* Ícone sem saltos */
+.header .nav-dropdown > summary i {
+  font-size: 18px;
+  line-height: 1 !important;
+  transform: none !important;
+}
+
+/* Menu flutuante -> não empurra o header quando abre */
+.header .nav-dropdown > ul {
+  position: absolute !important;
+  top: calc(100% + 6px) !important;
+  left: 0 !important;
+  margin: 0 !important; /* remove margin-top herdada */
+  z-index: 1000;
+}
+
+/* Zera marcadores do summary (Safari/Chrome) */
+.header .nav-dropdown > summary::-webkit-details-marker {
+  display: none !important;
+}
+
+/* (extra) Garante que nada do Pico reintroduza margem no UL base */
+.nav-dropdown ul {
+  margin-top: 0 !important;
+}
+
 /* ===== Responsivo ===== */
