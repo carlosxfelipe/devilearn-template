@@ -200,36 +200,29 @@ body {
   border-bottom: 1px solid var(--pico-muted-border-color);
 }
 
-/* Estilos del buscador */
-.search-box {
-  display: flex;
-  align-items: center;
-  background: var(--pico-form-element-background-color);
-  padding: 0.3rem 1rem;
-  border-radius: 10px;
-  border: 1px solid var(--pico-muted-border-color);
+.header input[type="search"] {
   width: 300px;
-}
-
-.search-box .icon {
-  margin-right: 8px;
-  color: var(--pico-muted-color);
-}
-
-.search-box input {
-  border: none;
-  outline: none;
-  background: transparent;
-  width: 100%;
-  font-size: 1rem;
-  padding: 0.25rem 0.5rem;
-  color: var(--pico-color);
   margin: 0;
-  line-height: normal;
+  align-self: center;
+  padding: 0.6rem 1rem 0.6rem 2.5rem;
+  background-image: none !important;
 }
 
-.search-box input::placeholder {
+.header {
+  position: relative;
+}
+
+.header::before {
+  content: "\f002";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  position: absolute;
+  left: calc(2rem + 1rem);
+  top: 50%;
+  transform: translateY(-50%);
   color: var(--pico-muted-color);
+  pointer-events: none;
+  z-index: 1;
 }
 
 /* Iconos a la derecha del header */
