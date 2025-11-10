@@ -29,7 +29,6 @@ body {
   color: var(--pico-color);
 }
 
-/* Navbar escuro usando estrutura nativa do Pico.css */
 nav {
   background-color: #0d1117;
   border-bottom: 1px solid var(--pico-muted-border-color);
@@ -53,7 +52,7 @@ nav ul li a:hover {
 
 aside.sidebar {
   background: var(--pico-card-background-color);
-  width: 300px;
+  width: 400px;
   padding: 1.5rem;
   overflow-y: auto;
 }
