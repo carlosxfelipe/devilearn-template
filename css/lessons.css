@@ -29,58 +29,21 @@ body {
   color: var(--pico-color);
 }
 
-.topbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 60px;
-  padding: 0 2rem;
+/* Navbar escuro usando estrutura nativa do Pico.css */
+nav {
   background-color: #0d1117;
-  color: #e6edf3;
   border-bottom: 1px solid var(--pico-muted-border-color);
+  padding: 0 2rem;
 }
 
-.topbar .logo {
-  font-weight: bold;
-  font-size: 1.3rem;
-  text-align: right;
-}
-
-.topbar .logo img {
-  width: 40%;
-}
-
-.topbar .acciones button,
-.topbar .back-link button,
-.discusiones {
-  background: transparent;
-  border: none;
+nav ul li a {
   color: #e6edf3;
-  margin-left: 1rem;
-  font-size: 0.9rem;
-  cursor: pointer;
-  padding: 0.5rem 1rem;
-  border-radius: var(--pico-border-radius);
-  transition: background-color 0.15s ease;
+  text-decoration: none;
 }
 
-.topbar .acciones button:hover {
+nav ul li a:hover {
   background-color: rgba(233, 242, 250, 0.08);
-}
-
-.discusiones {
-  color: #e6edf3;
-}
-}
-
-[data-theme="light"] .discusiones {
-  color: var(--pico-h1-color, #1f2937);
-}
-
-@media (prefers-color-scheme: light) {
-  .discusiones {
-    color: var(--pico-h1-color, #1f2937);
-  }
+  text-decoration: none;
 }
 
 .layout {
