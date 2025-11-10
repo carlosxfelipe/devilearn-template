@@ -41,8 +41,8 @@ body {
 .sidebar {
   width: 55px;
   height: 100vh;
-  background-color: var(--pico-background-color);
-  color: var(--pico-color);
+  background-color: #0d1117;
+  color: #e6edf3;
   padding: 1rem 0;
   display: flex;
   flex-direction: column;
@@ -77,12 +77,12 @@ body {
 }
 
 .menu .menu-option {
-  color: var(--pico-color);
+  color: #e6edf3;
   text-decoration: none;
 }
 
 .bottom-menu a {
-  color: var(--pico-color);
+  color: #e6edf3;
   text-decoration: none;
 }
 
@@ -104,7 +104,7 @@ body {
 
 .menu li:hover,
 .bottom-menu li:hover {
-  background: var(--pico-muted-border-color);
+  background: rgba(233, 242, 250, 0.08);
 }
 
 .icon {
