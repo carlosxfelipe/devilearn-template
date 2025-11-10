@@ -226,6 +226,30 @@ body {
   gap: 1rem;
 }
 
+.theme-switcher {
+  display: flex;
+  gap: 0.5rem;
+}
+
+#theme-toggle {
+  background: transparent;
+  border: 1px solid var(--pico-muted-border-color);
+  color: var(--pico-contrast);
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+}
+
+#theme-toggle:hover {
+  background: var(--pico-muted-border-color);
+}
+
 .icon-button {
   background: var(--pico-card-background-color);
   padding: 8px;
